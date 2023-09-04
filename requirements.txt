@@ -5,3 +5,4 @@ sympy
 scipy
 vallenae
 autograd
+openpyxl
