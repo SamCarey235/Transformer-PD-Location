@@ -3,5 +3,5 @@ pandas
 matplotlib
 sympy
 scipy
-vallanae
+vallenae
 autograd
