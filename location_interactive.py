@@ -135,12 +135,12 @@ if st.button("Calculate PD Times"):
 if st.button("Estimate PD Location"):
 
     # Convert to arrays
-    Time = tr_data["Time"].to_numpy()
-    coupling_capacitor = tr_data['coupling_capacitor'].to_numpy()
-    sensor_2 = tr_data["sensor_2"].to_numpy()
-    sensor_3 = tr_data["sensor_3"].to_numpy()
-    sensor_4 = tr_data["sensor_4"].to_numpy()
-    sensor_5 = tr_data["sensor_5"].to_numpy()
+    Time = tr_data["time"].to_numpy()
+    coupling_capacitor = tr_data['coupling capacitor'].to_numpy()
+    sensor_2 = tr_data["sensor 1"].to_numpy()
+    sensor_3 = tr_data["sensor 2"].to_numpy()
+    sensor_4 = tr_data["sensor 3"].to_numpy()
+    sensor_5 = tr_data["sensor 4"].to_numpy()
 
     # PD Time Calculation
     def calculate_pd_time(y_wave, aic_arr, start_val):
