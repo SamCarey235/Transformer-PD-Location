@@ -62,12 +62,12 @@ z_dim = st.number_input("Enter the length of the transformer in the z direction 
 # Calculate PD Times
 if st.button("Calculate PD Times"):
     # Convert to arrays
-    Time = tr_data["Time"].to_numpy()
-    coupling_capacitor = tr_data['coupling_capacitor'].to_numpy()
-    sensor_2 = tr_data["sensor_2"].to_numpy()
-    sensor_3 = tr_data["sensor_3"].to_numpy()
-    sensor_4 = tr_data["sensor_4"].to_numpy()
-    sensor_5 = tr_data["sensor_5"].to_numpy()
+    Time = tr_data["time"].to_numpy()
+    coupling_capacitor = tr_data['coupling capacitor'].to_numpy()
+    sensor_2 = tr_data["sensor 1"].to_numpy()
+    sensor_3 = tr_data["sensor 2"].to_numpy()
+    sensor_4 = tr_data["sensor 3"].to_numpy()
+    sensor_5 = tr_data["sensor 4"].to_numpy()
 
     # Setting up the timepicker plot
     def plot(t_wave, y_wave, y_picker, index_picker, name_picker, title):
