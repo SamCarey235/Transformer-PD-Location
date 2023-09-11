@@ -116,7 +116,7 @@ if st.button("Calculate PD Times"):
     fig5 = plot(Time, sensor_5, aic_arr5, aic_index5, "Akaike Information Criterion", "Sensor 5")
     st.pyplot(fig5)
 
-    PD_timecc = (er_indexcc + 300000)/100000
+    PD_timecc = (er_indexcc + 100000*start_val)/100000
     st.write(f"PD Time Coupling Capacitor: {PD_timecc} ms")
 
     PD_time2 = (aic_index2 + 100000*start_val)/100000
@@ -155,7 +155,7 @@ if st.button("Estimate PD Location"):
     aic_arr4, aic_index4 = vae.timepicker.aic(sensor_4)
     aic_arr5, aic_index5 = vae.timepicker.aic(sensor_5)
 
-    PD_timecc = (er_indexcc + 300000)/100000
+    PD_timecc = (er_indexcc + 100000*start_val)/100000
     PD_time2 = (aic_index2 + 100000*start_val)/100000
     PD_time3 = (aic_index3 + 100000*start_val)/100000
     PD_time4 = (aic_index4 + 100000*start_val)/100000
